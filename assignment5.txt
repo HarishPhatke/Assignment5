@@ -1,0 +1,12 @@
+Question:-There is a funciton that returns a 16 character string. It needs to called between 5K-10K times and the resutant strings need to be concatted. Which is the best way to do this in java? Why?
+
+Answer:-Generally + sign is used for small operation to concate the strings but when there is large number of string we have to concate then in such cases StringBiffer or StringBuilder is used to concate two strings in java both are the same.The reason behind the using of stringbuffer and String builder is its character like they are mutable unlike string, meaning that we can change the value of the object.Like the + operator, StringBuilder will work with several data types as the append() method is overloaded to accept an Object, StringBuilder, CharSequence, char[], boolean, char, int, long, float, and double.StringBuffer is almost similar to StringBuilder, except all methods are synchronized in it, i.e., StringBuffer is thread-safe. We should only use it when thread-safety is required, which is rarely the case.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:-Why is the Stack so important to implement recursion? When a recursive call is made what all is pushed on the stack? What will happen if there is no exit condition in a recursive function?
+
+Answer:-"Recursion" is technique of solving any problem by calling same function again and again until some breaking (base) condition where recursion stops and it starts calculating the solution from there on. For eg. calculating factorial of a given number.Thus in recursion last function called needs to be completed first.
+Now Stack is a LIFO data structure i.e. ( Last In First Out) and hence it is used to implement recursion.If there is no exit condition in recursive function then in such cases stack overflow occures.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
